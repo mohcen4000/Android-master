@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.Pathway.TreatmentFragment">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Treatment Options"
+                        android:textColor="#898A8F"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/s"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_white"
+                            >
+                            <ImageView
+                                android:id="@+id/imageTreatment1"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:padding="2dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/ic_pill"
+                                />
+                            <TextView
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/tretment1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toEndOf="@+id/imageTreatment1"
+                                android:text="Surgery"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/doct1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tretment1"
+                                android:layout_marginStart="8dp"
+                                android:layout_toEndOf="@+id/imageTreatment1"
+                                android:text="Urologist"
+                                android:textSize="13sp" />
+
+                            <TextView
+
+                                android:id="@+id/details1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/blue_fill__rounded_color"
+                                android:fontFamily="@font/poppins_regular"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="5dp"
+                                android:src="@drawable/blue_butt"
+                                android:text="Details"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp" />
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/h"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:id="@+id/imageTreatment2"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:padding="2dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/ic_pill"
+                                />
+                            <TextView
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/treatment2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toEndOf="@+id/imageTreatment2"
+                                android:text="Hormonal Therapy"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/doct2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/treatment2"
+                                android:layout_marginStart="8dp"
+                                android:layout_toEndOf="@+id/imageTreatment2"
+                                android:text="Urologist"
+                                android:textSize="13sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="5dp"
+                                android:text="Details"
+                                android:fontFamily="@font/poppins_regular"
+                                android:background="@drawable/blue_fill__rounded_color"
+                                android:textSize="15sp"
+                                android:textColor="@android:color/white"
+                                android:src="@drawable/blue_butt"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="5dp"
+                                android:id="@+id/details2"
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="center"
+                                />
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/r"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:id="@+id/imageTreatment3"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:padding="2dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/ic_pill"
+                                />
+                            <TextView
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/tretment3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toEndOf="@+id/imageTreatment3"
+                                android:text="Radiation therapy"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/doct3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tretment3"
+                                android:layout_marginStart="8dp"
+                                android:layout_toEndOf="@+id/imageTreatment3"
+                                android:text="Urologist"
+                                android:textSize="13sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="5dp"
+                                android:text="Details"
+                                android:fontFamily="@font/poppins_regular"
+                                android:background="@drawable/blue_fill__rounded_color"
+                                android:textSize="15sp"
+                                android:textColor="@android:color/white"
+                                android:src="@drawable/blue_butt"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="5dp"
+                                android:id="@+id/details3"
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="center"
+                                />
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/c"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:id="@+id/imageTreatment4"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:padding="2dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/ic_pill"
+                                />
+                            <TextView
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/tretment4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toEndOf="@+id/imageTreatment4"
+                                android:text="Chemotherapy"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/doct4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tretment4"
+                                android:layout_marginStart="8dp"
+                                android:layout_toEndOf="@+id/imageTreatment4"
+                                android:text="Urologist"
+                                android:textSize="13sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="5dp"
+                                android:text="Details"
+                                android:fontFamily="@font/poppins_regular"
+                                android:background="@drawable/blue_fill__rounded_color"
+                                android:textSize="15sp"
+                                android:textColor="@android:color/white"
+                                android:src="@drawable/blue_butt"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="5dp"
+                                android:id="@+id/details4"
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="center"
+                                />
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/i"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:id="@+id/imageTreatment5"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:padding="2dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/ic_pill"
+                                />
+                            <TextView
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/treatment5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toEndOf="@+id/imageTreatment5"
+                                android:text="Immunotherapy"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/tretment5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/treatment5"
+                                android:layout_marginStart="8dp"
+                                android:layout_toEndOf="@+id/imageTreatment5"
+                                android:text="Urologist"
+                                android:textSize="13sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="5dp"
+                                android:text="Details"
+                                android:fontFamily="@font/poppins_regular"
+                                android:background="@drawable/blue_fill__rounded_color"
+                                android:textSize="15sp"
+                                android:textColor="@android:color/white"
+                                android:src="@drawable/blue_butt"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="5dp"
+                                android:id="@+id/details5"
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="center"
+                                />
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/b"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:id="@+id/imageTreatment6"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:padding="2dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/ic_pill"
+                                />
+                            <TextView
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/treatment6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toEndOf="@+id/imageTreatment6"
+                                android:text="Bisphosphona"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:fontFamily="@font/poppins_regular"
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/treatment6"
+                                android:layout_marginStart="8dp"
+                                android:layout_toEndOf="@+id/imageTreatment6"
+                                android:text="Urologist"
+                                android:textSize="13sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="5dp"
+                                android:text="Details"
+                                android:fontFamily="@font/poppins_regular"
+                                android:background="@drawable/blue_fill__rounded_color"
+                                android:textSize="15sp"
+                                android:textColor="@android:color/white"
+                                android:src="@drawable/blue_butt"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="5dp"
+                                android:id="@+id/details6"
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="center"
+                                />
+
+
+                        </RelativeLayout>
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_white"
+            android:layout_margin="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/second_title"
+                    android:textColor="#898A8F"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/ic_nurse" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="Surgery"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/ic_rectangle_64"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/current_treatmentnote"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="Doctor Observation Doctor Observation Doctor Observation"
+                                    android:textColor="#898A8F"
+                                    android:textSize="12sp"
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_rectangle_62">
+
+                        <TextView
+                            android:id="@+id/currenttreatment_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Completed"
+                            android:textColor="#E6B12E"
+                            android:textSize="10sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="Congrats You are clean!"
+                            android:textColor="#3A58FC"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

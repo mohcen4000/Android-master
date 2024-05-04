@@ -1,0 +1,3 @@
+include ':app:pdfcre'
+rootProject.name='Proman'
+include ':app'

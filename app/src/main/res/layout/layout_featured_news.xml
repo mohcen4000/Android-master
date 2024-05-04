@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    >
+
+    <TextView
+        style="@style/viewParent.headerText"
+        android:textColor="@color/cyan_900"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textSize="16sp"
+        android:text="Organizing the diary and eating is one of the most important things in a person’s life"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/pcalifestyle" />
+
+    <TextView
+        style="@style/miniTitle"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        android:textColor="@color/featuredNewsContentColor" />
+</LinearLayout>

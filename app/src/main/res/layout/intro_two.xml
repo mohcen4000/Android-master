@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/ic_back2"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back_on"
+            android:gravity="center"
+            >
+
+            <ImageView
+
+                android:layout_width="170dp"
+                android:layout_height="130dp"
+                android:background="@drawable/ic_personalisedcare"
+                android:layout_marginRight="12dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personalised care for you"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginBottom="4dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proman allows you to receive customised information about PCa based on your specific situation, including treatment options ,healthy food recommendations , as well as platform for psychological support"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25sp"
+
+
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activities.EditSymptoms"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#1858DD"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/sym_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_back"
+            app:tint="@color/colorTextIcons" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:includeFontPadding="false"
+            android:text="Add a new symptom"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="@dimen/_16ssp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:id="@+id/mod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Symptom name"
+            android:fontFamily="@font/ubuntu_regular"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black1"
+
+            />
+
+        <com.isapanah.awesomespinner.AwesomeSpinner
+
+            android:layout_below="@id/mod"
+            android:id="@+id/my_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:spinnerDirection="ltr"
+            app:spinnerHint="Select a symptom"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_below="@id/my_spinner"
+            android:id="@+id/sev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Severity"
+            android:fontFamily="@font/ubuntu_regular"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black1"
+
+            />
+
+        <RadioGroup
+            android:layout_below="@id/sev"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rangebar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            >
+            <RadioButton
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/none"
+                android:text="None"
+                android:fontFamily="@font/poppins_medium"
+                android:buttonTint="#1858DD"
+                />
+            <RadioButton
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mild"
+                android:text="Mild"
+                android:fontFamily="@font/poppins_medium"
+                android:buttonTint="#1858DD"
+
+                />
+
+            <RadioButton
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/moderate"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Moderate"
+                android:buttonTint="#1858DD"
+
+                />
+
+            <RadioButton
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/severe"
+                android:text="Severe"
+                android:fontFamily="@font/poppins_medium"
+                android:buttonTint="#1858DD"
+
+                />
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/dt_datee"
+            android:layout_below="@id/rangebar2"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_below="@id/rangebar2"
+                    android:id="@+id/radi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black1"
+
+                    />
+
+                <android.helper.DateTimePickerEditText
+                    android:id="@+id/dt_date1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radi"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="date"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_below="@id/rangebar2"
+                    android:id="@+id/tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black1"
+
+                    />
+
+                <EditText
+                    android:id="@+id/dt_time1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radi"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:cursorVisible="false"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_below="@+id/dt_datee"
+            android:id="@+id/txt_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note"
+            android:fontFamily="@font/ubuntu_regular"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black1"
+
+            />
+
+        <EditText
+            android:layout_below="@id/txt_note"
+            android:id="@+id/sympt_notes"
+            android:hint="Add More details"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top|start"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill"
+            android:fontFamily="@font/ubuntu_regular"
+            android:layout_margin="10dp"
+
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+
+        android:layout_below="@id/sympt_notes"
+        android:id="@+id/btn_submit_symp"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="18.7dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/blue_fill__rounded_color"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+
+
+
+        />
+
+
+
+
+
+</LinearLayout>

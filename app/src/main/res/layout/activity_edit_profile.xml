@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.uc2.dzprostatecare.ui.activities.SettingsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="#1858DD"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/edit_profile_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_back"
+            app:tint="@color/colorTextIcons" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:includeFontPadding="false"
+            android:text="Edit Profile"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="@dimen/_16ssp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/profilebar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#4B4C4E"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:isScrollContainer="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_white"
+                android:layout_marginTop="8dp"
+                >
+                <TextView
+                    android:layout_toLeftOf="@id/progtext"
+                    android:id="@+id/progtext1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/progtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Completed"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:layout_marginRight="20dp"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_below="@id/progtext"
+                    android:id="@+id/tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Complete your profile .."
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:gravity="center"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileCircleImageView"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/imageBorderColor"
+                    android:src="@drawable/ic_circular_avatar_svgrepo_com"
+                    android:layout_marginRight="10dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="Personal Information"
+                android:textSize="18sp"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/first_name_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black1"
+                    />
+
+                <TextView
+                    android:id="@+id/first_name_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zinelabidine"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/first"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="17sp"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/last_name_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black1"
+                    />
+
+                <TextView
+                    android:id="@+id/last_name_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leghelimi"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/last"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="17sp"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/last"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/year_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year of birth"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black1"
+                    />
+
+                <TextView
+                    android:id="@+id/year_of_birth_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1965"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/birth"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="17sp"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/email_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black1"
+                    />
+
+                <TextView
+                    android:id="@+id/email_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pyzino@gmail.com"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/email"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="17sp"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/phone_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black1"
+                    />
+
+                <TextView
+                    android:id="@+id/phone_number_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+213668147006"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/phone"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="17sp"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/address_ed_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address "
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black1"
+                    />
+
+                <TextView
+                    android:id="@+id/address_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sidi Marouf,Jijel "
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/email"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="17sp"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/marrial_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marital Situation"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black1"
+                    />
+
+                <TextView
+                    android:id="@+id/marial_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Married"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/email"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="17sp"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ethnicity_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ethnicity"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black1"
+                    />
+
+                <TextView
+                    android:id="@+id/ethnicity_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="African"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/email"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="17sp"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/carer_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User "
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black1"
+                    />
+
+                <TextView
+                    android:id="@+id/carer_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carer "
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/email"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="17sp"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="Life Style"
+                android:textSize="18sp"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alcohol Intake "
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black1"
+                    />
+
+                <TextView
+                    android:id="@+id/alcohol_intake_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Never Tried"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/alcohol"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="17sp"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/alcohol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smoking "
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black1"
+                    />
+
+                <TextView
+                    android:id="@+id/smoking_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Never Tried"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/smoking"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="17sp"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/smoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="Other Information"
+                android:textSize="18sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency number"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black1"
+                    />
+
+                <TextView
+                    android:id="@+id/emergency_number_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+213668147006"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/emerga"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="17sp"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/emerga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood type"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="18sp"
+                    android:textColor="@color/black1"
+                    />
+
+                <TextView
+                    android:id="@+id/blood_type_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A+"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/bloo"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textSize="17sp"
+
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/bloo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

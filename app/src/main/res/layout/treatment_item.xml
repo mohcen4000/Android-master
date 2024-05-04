@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_white"
+            >
+            <ImageView
+                android:id="@+id/imageTreatment1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_pill"
+                />
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/tretment1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imageTreatment1"
+                android:text="Surgery"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/doct1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tretment1"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/imageTreatment1"
+                android:text="Urologist"
+                android:textSize="13sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="Details"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/blue_fill__rounded_color"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:src="@drawable/blue_butt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/details1"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

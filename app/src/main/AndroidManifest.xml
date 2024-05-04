@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.uc2.dzprostatecare">
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activities.ModifySymptom"></activity>
+        <activity android:name=".ui.activities.ModifyAppointment" />
+        <activity android:name=".ui.activities.profile.Ethnicity" />
+        <activity android:name=".ui.activities.profile.Smoking" />
+        <activity android:name=".ui.activities.profile.Alcohol_Intake" />
+        <activity
+            android:name=".ui.activities.FoodDetails"
+            android:label="@string/title_activity_food_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.activities.HelpUser" />
+        <activity android:name=".ui.activities.PsycologicalCare" />
+        <activity android:name=".ui.activities.ModifyQuestion" />
+        <activity android:name=".ui.activities.LearnAbout1" />
+        <activity android:name=".ui.activities.Advices" />
+        <activity android:name=".ui.activities.Appoin" />
+        <activity android:name=".ui.activities.addAppointment" />
+        <activity android:name=".ui.Chat" />
+        <activity android:name=".ui.activities.physical_data.Temperature" />
+        <activity android:name=".ui.activities.physical_data.Pulse" />
+        <activity android:name=".ui.activities.physical_data.Pressure" />
+        <activity android:name=".ui.activities.learn_about_pca.Glucose" />
+        <activity android:name=".ui.activities.FoodActivity" />
+        <activity android:name=".ui.Symptom" />
+        <activity android:name=".ui.activities.OnBoarding">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.physical_data.Psa" />
+
+        <service
+            android:name=".pojo.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ui.activities.profile.MaritalSituation" />
+        <activity android:name=".ui.activities.profile.Address" />
+        <activity android:name=".ui.activities.profile.Phone" />
+        <activity android:name=".ui.activities.profile.Email" />
+        <activity android:name=".ui.activities.profile.Carer" />
+        <activity android:name=".ui.activities.profile.YearOfBirth" />
+        <activity android:name=".ui.activities.profile.LastName" />
+        <activity android:name=".ui.activities.profile.FirstName" />
+        <activity android:name=".ui.activities.EditProfile" />
+        <activity android:name=".ui.activities.QuestionActivity" />
+        <activity android:name=".ui.TreatmentPlans" />
+        <activity android:name=".ui.activities.AskMe" />
+        <activity android:name=".ui.activities.PdfEditorActivity" />
+        <activity android:name=".ui.activities.PdfViewerActivity" />
+        <activity android:name=".ui.activities.PdfCreatorActivity" />
+        <activity android:name=".ui.activities.SettingsActivity" />
+        <activity
+            android:name=".ui.activities.learn_about_pca.InfoDetail"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".ui.activities.AddNewQuestion" />
+        <activity android:name=".ui.activities.HomeUsers" />
+        <activity android:name=".ui.activities.EditSymptoms" />
+        <activity android:name=".ui.activities.ContactDoctor" />
+        <activity android:name=".ui.activities.Register" />
+        <activity android:name=".ui.activities.Pathway" />
+        <activity android:name=".ui.activities.ResetPassword" />
+        <activity android:name=".ui.activities.LoginQR" />
+        <activity android:name=".ui.activities.Home" />
+        <activity android:name=".ui.activities.MainActivity" />
+        <activity android:name=".ui.activities.Login" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.uc2.dzprostatecare.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

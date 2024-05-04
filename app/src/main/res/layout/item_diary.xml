@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/eventtype"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="10dp"
+
+                />
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/consperiod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/eventtype"
+                android:text="Consultation"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/peri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/consperiod"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/eventtype"
+                android:text="Between 08 AM to 10AM"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="Confirm"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/blue_fill__rounded_color"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:src="@drawable/blue_butt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/btn_confirm"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

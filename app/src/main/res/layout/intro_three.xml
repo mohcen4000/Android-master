@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/ic_back2"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back_on"
+            android:gravity="center"
+            >
+
+            <ImageView
+
+                android:layout_width="170dp"
+                android:layout_height="130dp"
+                android:background="@drawable/ic_meet"
+                android:layout_marginRight="12dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meet with caregivers"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginBottom="4dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Through Proman, you can communicate with your doctor to ask questions and inquiries, and also make appointments in order to set up a consultation through the application in the event that an in-person consultation is not possible"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25sp"
+
+
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

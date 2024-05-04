@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="75" viewBox="0 0 75 75">
+  <defs>
+    <filter id="Oval" x="0" y="0" width="75" height="75" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Back_Icon" data-name="Back Icon" transform="translate(13.5 15.5)">
+    <g transform="matrix(1, 0, 0, 1, -13.5, -15.5)" filter="url(#Oval)">
+      <circle id="Oval-2" data-name="Oval" cx="22.5" cy="22.5" r="22.5" transform="translate(15 15)" fill="#fff"/>
+    </g>
+    <g id="left" transform="translate(11 11)">
+      <path id="Path" d="M16,4.583H4.571l4-3.208L6.857,0,0,5.5,6.857,11,8.571,9.625l-4-3.208H16Z" transform="translate(5 6)" fill="#8d6dc5"/>
+    </g>
+  </g>
+</svg>

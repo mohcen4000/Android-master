@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activities.addAppointment"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#1858DD"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/app_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_back"
+            app:tint="@color/colorTextIcons" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:includeFontPadding="false"
+            android:text="Schedule an appointment"
+            android:textColor="@color/colorTextIcons"
+            android:textSize="@dimen/_16ssp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:id="@+id/hea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Professional"
+            android:fontFamily="@font/ubuntu_regular"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black1"
+
+            />
+
+        <com.isapanah.awesomespinner.AwesomeSpinner
+
+            android:layout_below="@id/hea"
+            android:id="@+id/my_spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:spinnerDirection="ltr"
+            app:spinnerHint="Select a health professional"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_below="@id/my_spinner1"
+            android:id="@+id/appt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment type"
+            android:fontFamily="@font/ubuntu_regular"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black1"
+
+            />
+
+        <RadioGroup
+            android:layout_below="@id/appt"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rangebar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            >
+            <RadioButton
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/facetoface"
+                android:text="Face to face"
+                android:fontFamily="@font/poppins_medium"
+                android:buttonTint="#1858DD"
+                />
+            <RadioButton
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/online"
+                android:text="Online"
+                android:fontFamily="@font/poppins_medium"
+                android:buttonTint="#1858DD"
+
+                />
+
+            <RadioButton
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/telephone"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Telephone"
+                android:buttonTint="#1858DD"
+
+                />
+
+
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_below="@id/rangebar1"
+            android:id="@+id/radi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:fontFamily="@font/ubuntu_regular"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black1"
+
+            />
+
+        <android.helper.DateTimePickerEditText
+            android:id="@+id/d_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radi"
+            android:inputType="date"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+        <TextView
+            android:layout_below="@id/d_date"
+            android:id="@+id/txt_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reason for contact"
+            android:fontFamily="@font/ubuntu_regular"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black1"
+
+            />
+
+        <com.isapanah.awesomespinner.AwesomeSpinner
+
+            android:layout_below="@id/txt_note"
+            android:id="@+id/my_spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:spinnerDirection="ltr"
+            app:spinnerHint="Select a reason of appointment"
+            android:layout_margin="10dp"
+            />
+
+
+        <EditText
+            android:layout_below="@id/my_spinner2"
+            android:id="@+id/pther_reason"
+            android:hint="Other Reasons"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:gravity="top|start"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="Autofill"
+            android:fontFamily="@font/ubuntu_regular"
+            android:layout_margin="10dp"
+
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+
+        android:layout_below="@id/questiondetails"
+        android:id="@+id/btn_submit_app"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="18.7dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/blue_fill__rounded_color"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+
+
+
+        />
+
+
+
+
+
+</LinearLayout>

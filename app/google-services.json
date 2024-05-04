@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "462201562754",
+    "project_id": "pcacare-41e65",
+    "storage_bucket": "pcacare-41e65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462201562754:android:51f3af0cbdea4fb732369b",
+        "android_client_info": {
+          "package_name": "com.uc2.dzprostatecare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462201562754-1erc4r8v0phehv60sc7ddbhr9ff062ic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd0K0_FvJYKFEDGxBGlkFkQPNwR0ILFng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462201562754-1erc4r8v0phehv60sc7ddbhr9ff062ic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
